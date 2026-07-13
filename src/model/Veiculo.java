@@ -19,4 +19,12 @@ public Veiculo(String marca, String modelo, int anoFabricacao, String placa, int
     this.quilometragem = quilometragem;
 
 }
+
+    @Override
+    public String toString() {
+        return String.format(
+            "Veiculo: %s %s (%d) - Placa %s - %d km",
+            marca, modelo, anoFabricacao, placa, quilometragem
+        );
+    }
 }
